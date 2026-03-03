@@ -209,6 +209,8 @@ wget https://github.com/FreeCAD/FreeCAD/releases/download/1.0.2/FreeCAD_1.0.2-co
 wget https://github.com/Ultimaker/Cura/releases/download/5.10.2/UltiMaker-Cura-5.10.2-linux-X64.AppImage
 
 
+#---- hibernation ----
+# https://ubuntuhandbook.org/index.php/2021/08/enable-hibernate-ubuntu-21-10/
 
 
 
