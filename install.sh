@@ -13,6 +13,8 @@ sudo systemctl enable thermald
 #:: TLP
 sudo apt install tlp tlp-rdw
 sudo systemctl enable --now tlp.service
+# Move config to:
+# /etc/tlp.conf
 
 #:: File tranfer
 sudo apt install syncthing
@@ -46,6 +48,7 @@ flatpak install flathub com.github.d4nj1.tlpui
 flatpak install flathub it.mijorus.gearlever
 flatpak install flathub com.github.tchx84.Flatseal
 flatpak install flathub io.github.giantpinkrobots.flatsweep
+flatpak install flathub org.deskflow.deskflow
 
 # :: design
 flatpak install flathub org.freecad.FreeCAD
@@ -201,6 +204,9 @@ wget https://github.com/FreeTubeApp/FreeTube/releases/download/v0.23.13-beta/fre
 # https://www.freecad.org/downloads.php?lang=en
 wget https://github.com/FreeCAD/FreeCAD/releases/download/1.0.2/FreeCAD_1.0.2-conda-Linux-x86_64-py311.AppImage
 
+# :: Cura ultimaker
+# https://github.com/Ultimaker/Cura/releases/
+wget https://github.com/Ultimaker/Cura/releases/download/5.10.2/UltiMaker-Cura-5.10.2-linux-X64.AppImage
 
 
 
