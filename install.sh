@@ -1,9 +1,11 @@
 # Install script to setup an XFCE install
-
+mkdir downloads
+cd downloads
 
 #------- base programs -------
 #:: Tools
 sudo apt install wget
+sudo apt install jq
 sudo apt install htop
 #sudo apt install intel-gpu-tools
 sudo apt install lm-sensors
@@ -145,6 +147,18 @@ sudo apt install ungoogled-chromium
 # Cortile
 # https://github.com/leukipp/cortile?tab=readme-ov-file
 # https://github.com/leukipp/cortile/blob/main/assets/services/cortile.service
+
+# download binary
+mkdir cortile
+cd cortile
+wget -qO- $(wget -qO- https://api.github.com/repos/leukipp/cortile/releases/latest | \
+jq -r '.assets[] | select(.name | contains ("linux_amd64.tar.gz")) | .browser_download_url') | \
+tar -xvz
+
+# move file to binary
+sudo cp cortile /usr/local/bin/cortile
+cp ../../cortile.service cortile.service
+
 # copy systemd service file
 cp cortile.service ~/.config/systemd/user/
 # reload systemd configuration
