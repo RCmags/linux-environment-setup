@@ -193,14 +193,10 @@ cd ..
 
 # Purge linux mint
 # https://github.com/MK2112/Linux-Mint-Debloater
-sudo apt remove 
-        thunderbird            # Email and news client
-        rhythmbox              # Music player
-        pix                    # Image viewer and browser
-        simple-scan            # Scanning utility
-        gnote                  # Note-taking application
-        celluloid              # Video player
-        warpinator             # Tool for local network file sharing
+sudo apt remove rhythmbox pix sticky hypnotix celluloid warpinator             
+# thunderbird
+# simple-scan            
+
 
 # Purge libreoffice
 # https://computingforgeeks.com/uninstall-libreoffice-on-ubuntu/
