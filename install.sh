@@ -2,15 +2,26 @@
 mkdir downloads
 cd downloads
 
+#------ grub config
+# https://ubuntuhandbook.org/index.php/2024/08/enable-zswap-ubuntu/
+
+sudo nano /etc/default/grub
+# “GRUB_CMDLINE_LINUX_DEFAULT” -> zswap.enabled=1 
+# “GRUB_CMDLINE_LINUX_DEFAULT” -> remove -> splash
+sudo update-grub
+
 #------- base programs -------
 #:: Tools
 sudo apt install wget
 sudo apt install jq
 sudo apt install htop
-#sudo apt install intel-gpu-tools
 sudo apt install lm-sensors
-sudo apt-get install thermald
-sudo systemctl enable thermald
+sudo apt install stress
+
+# For intel:
+#sudo apt install intel-gpu-tools
+#sudo apt-get install thermald
+#sudo systemctl enable thermald
 
 #:: TLP
 sudo apt install tlp tlp-rdw
@@ -26,7 +37,7 @@ systemctl --user start syncthing
 sudo apt install vlc
 sudo apt install kdiskmark
 sudo apt install screengrab
-sudo apt install gnome-system-monitor
+#sudo apt install gnome-system-monitor
 
 # :: qt platform themes
 # https://bbs.archlinux.org/viewtopic.php?id=259721
@@ -37,6 +48,7 @@ sudo apt install qt6ct
 
 # :: debloat
 sudo apt remove yaru-theme-icon
+sudo apt remove xfce4-screenshooter
 
 #------------------------------
 
@@ -53,10 +65,10 @@ flatpak install flathub com.github.d4nj1.tlpui
 flatpak install flathub it.mijorus.gearlever
 flatpak install flathub com.github.tchx84.Flatseal
 flatpak install flathub io.github.giantpinkrobots.flatsweep
-flatpak install flathub org.deskflow.deskflow
+#flatpak install flathub org.deskflow.deskflow
 
 # :: design
-flatpak install flathub org.freecad.FreeCAD
+#flatpak install flathub org.freecad.FreeCAD
 flatpak install flathub cc.arduino.IDE2
 flatpak install flathub org.kde.krita
 flatpak install flathub org.audacityteam.Audacity
@@ -79,8 +91,8 @@ flatpak install flathub org.onlyoffice.desktopeditors
 # :: helpers
 flatpak install flathub com.github.jeromerobert.pdfarranger
 flatpak install flathub io.github.alainm23.planify
-flatpak install flathub com.rustdesk.RustDesk
-flatpak install flathub net.mkiol.SpeechNote
+#flatpak install flathub com.rustdesk.RustDesk
+#flatpak install flathub net.mkiol.SpeechNote
 #flatpak install flathub io.github.jonmagon.kdiskmark
 
 # :: misc
