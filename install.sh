@@ -45,6 +45,8 @@ sudo apt install screengrab
 # https://www.youtube.com/watch?v=yhbDy_i9X1w
 sudo apt install qt5ct
 sudo apt install qt6ct
+sudo cp ../qt5.conf /etc/environment.d/qt5.conf
+
 
 # :: debloat
 sudo apt remove yaru-theme-icon
@@ -231,6 +233,9 @@ sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
 #------------------------------
 
 # AppImages
+mkdir appimages
+cd appimages
+
 # https://antimicro.net/
 wget https://github.com/AntiMicroX/antimicrox/releases/download/3.5.1/AntiMicroX-x86_64.AppImage
 
@@ -248,6 +253,10 @@ wget https://github.com/FreeCAD/FreeCAD/releases/download/1.0.2/FreeCAD_1.0.2-co
 # https://github.com/Ultimaker/Cura/releases/
 wget https://github.com/Ultimaker/Cura/releases/download/5.10.2/UltiMaker-Cura-5.10.2-linux-X64.AppImage
 
+# :: drawio [better file integration]
+wget https://github.com/jgraph/drawio-desktop/releases/download/v29.5.2/drawio-x86_64-29.5.2.AppImage
+
+cd ..
 
 #---- hibernation ----
 # https://ubuntuhandbook.org/index.php/2021/08/enable-hibernate-ubuntu-21-10/
