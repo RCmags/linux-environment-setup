@@ -33,6 +33,9 @@ sudo apt install gnome-system-monitor
 sudo apt install qt5ct
 sudo apt install qt6ct
 
+# :: debloat
+sudo apt remove yaru-theme-icon
+
 #------------------------------
 
 # Flatpak install
