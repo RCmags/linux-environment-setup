@@ -70,7 +70,7 @@ flatpak install flathub io.github.giantpinkrobots.flatsweep
 #flatpak install flathub org.deskflow.deskflow
 
 # :: design
-#flatpak install flathub org.freecad.FreeCAD
+flatpak install flathub org.freecad.FreeCAD
 flatpak install flathub cc.arduino.IDE2
 flatpak install flathub org.kde.krita
 flatpak install flathub org.audacityteam.Audacity
@@ -93,7 +93,7 @@ flatpak install flathub org.onlyoffice.desktopeditors
 # :: helpers
 flatpak install flathub com.github.jeromerobert.pdfarranger
 flatpak install flathub io.github.alainm23.planify
-#flatpak install flathub com.rustdesk.RustDesk
+flatpak install flathub com.rustdesk.RustDesk
 #flatpak install flathub net.mkiol.SpeechNote
 #flatpak install flathub io.github.jonmagon.kdiskmark
 
@@ -123,18 +123,40 @@ cat signal-desktop.sources | sudo tee /etc/apt/sources.list.d/signal-desktop.sou
 sudo apt update && sudo apt install signal-desktop
 
 
-# waydroid installer
+# :: waydroid installer
 # https://github.com/1999AZZAR/use-waydroid-on-x11/tree/master
+sudo apt install git
+git clone https://github.com/1999AZZAR/use-waydroid-on-x11.git
+cd use-waydroid-on-x11
+sh install.sh
+
+# desktop entry
+sh waydroid-session.sh 
+sudo cp waydroid-session.sh /usr/bin/waydroid-session.sh
+sudo chmod +x /usr/bin/waydroid-session.sh
+sudo cp ../../waydroid-session.desktop /usr/share/applications/waydroid-session.desktop
+sudo chmod +x /usr/share/applications/waydroid-session.desktop
+cd ..
 
 
-# waydroid script 
+# :: waydroid script 
 # https://github.com/casualsnek/waydroid_script
+git clone https://github.com/casualsnek/waydroid_script
+cd waydroid_script
 
+#conda create -n waydroid_script python=3.13
+#conda activate waydroid_script
+#pip install -r requirements.txt
+
+python3 -m venv venv
+venv/bin/pip install -r requirements.txt
+sudo venv/bin/python3 main.py
+cd ..
 
 # miniconda
 # https://www.anaconda.com/docs/getting-started/miniconda/install#linux-terminal-installer
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash ~/Miniconda3-latest-Linux-x86_64.sh
+bash ./Miniconda3-latest-Linux-x86_64.sh
 source ~/.bashrc
 
 
@@ -222,9 +244,12 @@ pipx install aider-chat
 
 # REMINA
 # https://remmina.org/how-to-install-remmina/#ubuntu
-sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
+#sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
 sudo apt update
-sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
+sudo apt install remmina #remmina-plugin-rdp remmina-plugin-secret
+
+# Antimicrox
+sudo apt install antimicrox
 
 #------------------------------
 

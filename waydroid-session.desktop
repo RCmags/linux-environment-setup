@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Waydroid Session
+Comment=Start Waydroid in a Weston session
+Exec=/usr/bin/waydroid-session.sh
+Icon=waydroid
+Terminal=false
+Categories=System;Emulator;
