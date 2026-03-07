@@ -58,16 +58,16 @@
         <value type="string" value="xfce4-taskmanager.desktop"/>
       </property>
       <property name="recent" type="array">
+        <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="simple-scan.desktop"/>
+        <value type="string" value="org.gnome.Rhythmbox3.desktop"/>
+        <value type="string" value="onboard.desktop"/>
+        <value type="string" value="xfce4-taskmanager.desktop"/>
+        <value type="string" value="xfce-ui-settings.desktop"/>
+        <value type="string" value="xfce-mouse-settings.desktop"/>
         <value type="string" value="xfce-wm-settings.desktop"/>
         <value type="string" value="xfce-wmtweaks-settings.desktop"/>
         <value type="string" value="thunar.desktop"/>
-        <value type="string" value="xfce-session-settings.desktop"/>
-        <value type="string" value="xfce-ui-settings.desktop"/>
-        <value type="string" value="lightdm-settings.desktop"/>
-        <value type="string" value="light-locker-settings.desktop"/>
-        <value type="string" value="mintdesktop.desktop"/>
-        <value type="string" value="mintinstall.desktop"/>
-        <value type="string" value="com.github.maoschanz.drawing.desktop"/>
       </property>
       <property name="launcher-show-description" type="bool" value="false"/>
       <property name="menu-width" type="int" value="550"/>
@@ -107,6 +107,7 @@
       <property name="names-visible" type="empty"/>
       <property name="show-frame" type="empty"/>
       <property name="known-items" type="array">
+        <value type="string" value="Onboard"/>
         <value type="string" value="blueman"/>
       </property>
       <property name="known-legacy-items" type="array">
@@ -117,6 +118,7 @@
       <property name="single-row" type="bool" value="true"/>
       <property name="square-icons" type="bool" value="true"/>
       <property name="hidden-items" type="array">
+        <value type="string" value="Onboard"/>
         <value type="string" value="blueman"/>
       </property>
       <property name="hidden-legacy-items" type="array">
@@ -138,7 +140,7 @@
       <property name="digital-layout" type="empty"/>
       <property name="digital-date-font" type="string" value="Sans 11"/>
       <property name="digital-time-font" type="string" value="Sans Bold 11"/>
-      <property name="digital-date-format" type="string" value="%m/%d/%Y"/>
+      <property name="digital-date-format" type="string" value="%d/%m/%Y"/>
     </property>
     <property name="plugin-14" type="string" value="launcher">
       <property name="items" type="array">
