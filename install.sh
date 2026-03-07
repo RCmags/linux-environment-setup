@@ -5,7 +5,7 @@
 #:: Tools
 sudo apt install wget
 sudo apt install htop
-sudo apt install intel-gpu-tools
+#sudo apt install intel-gpu-tools
 sudo apt install lm-sensors
 sudo apt-get install thermald
 sudo systemctl enable thermald
@@ -161,7 +161,14 @@ systemctl --user start cortile.service
 
 # Purge linux mint
 # https://github.com/MK2112/Linux-Mint-Debloater
-
+sudo apt remove 
+        thunderbird            # Email and news client
+        rhythmbox              # Music player
+        pix                    # Image viewer and browser
+        simple-scan            # Scanning utility
+        gnote                  # Note-taking application
+        celluloid              # Video player
+        warpinator             # Tool for local network file sharing
 
 # Purge libreoffice
 # https://computingforgeeks.com/uninstall-libreoffice-on-ubuntu/
