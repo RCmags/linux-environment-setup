@@ -18,6 +18,9 @@ sudo apt install htop
 sudo apt install lm-sensors
 sudo apt install stress
 
+sudo apt install git
+sudo apt install gparted
+
 # For intel:
 #sudo apt install intel-gpu-tools
 #sudo apt-get install thermald
@@ -125,7 +128,6 @@ sudo apt update && sudo apt install signal-desktop
 
 # :: waydroid installer
 # https://github.com/1999AZZAR/use-waydroid-on-x11/tree/master
-sudo apt install git
 git clone https://github.com/1999AZZAR/use-waydroid-on-x11.git
 cd use-waydroid-on-x11
 sh install.sh
@@ -288,5 +290,18 @@ papirus-folders -C paleorange --theme Papirus-Dark
 #---- hibernation ----
 # https://ubuntuhandbook.org/index.php/2021/08/enable-hibernate-ubuntu-21-10/
 
+# :: increase swap space
+# https://linuxconfig.org/how-to-increase-swap-space-on-linux
+
+
+#:: Steam 
+sudo apt install steam-installer
+
+#---- displaylink drivers
+# https://github.com/AdnanHodzic/displaylink-debian
+git clone https://github.com/AdnanHodzic/displaylink-debian.git
+cd displaylink-debian
+sudo ./displaylink-debian.sh
+cd ..
 
 
