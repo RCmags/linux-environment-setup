@@ -1,0 +1,11 @@
+[xfdesktop-version-4.10.3+-rcfile_format]
+4.10.3+=true
+
+[/home/user/Desktop/glmark2-single-channel.txt]
+row=0
+col=0
+
+[/home/user/Desktop/ram-soldered.txt]
+row=1
+col=0
+

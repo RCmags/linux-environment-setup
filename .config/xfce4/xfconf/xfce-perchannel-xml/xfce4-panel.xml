@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="empty"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <value type="int" value="2"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=960;y=17"/>
+      <property name="length" type="empty"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="54"/>
+      <property name="background-style" type="empty"/>
+      <property name="background-alpha" type="empty"/>
+      <property name="enter-opacity" type="empty"/>
+      <property name="leave-opacity" type="empty"/>
+      <property name="icon-size" type="uint" value="32"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="1"/>
+        <value type="int" value="2"/>
+        <value type="int" value="16"/>
+        <value type="int" value="18"/>
+        <value type="int" value="6"/>
+        <value type="int" value="17"/>
+        <value type="int" value="8"/>
+        <value type="int" value="9"/>
+        <value type="int" value="10"/>
+        <value type="int" value="11"/>
+        <value type="int" value="12"/>
+        <value type="int" value="13"/>
+        <value type="int" value="15"/>
+      </property>
+    </property>
+    <property name="panel-2" type="empty">
+      <property name="position" type="string" value="p=10;x=962;y=1055"/>
+      <property name="size" type="uint" value="75"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="enable-struts" type="bool" value="true"/>
+      <property name="autohide-behavior" type="uint" value="2"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="14"/>
+        <value type="int" value="19"/>
+        <value type="int" value="7"/>
+        <value type="int" value="3"/>
+      </property>
+      <property name="length" type="double" value="4.166666666666667"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-1" type="empty">
+      <property name="favorites" type="array">
+        <value type="string" value="firefox.desktop"/>
+        <value type="string" value="thunderbird.desktop"/>
+        <value type="string" value="pix.desktop"/>
+        <value type="string" value="org.gnome.Rhythmbox3.desktop"/>
+        <value type="string" value="org.gnome.Calculator.desktop"/>
+        <value type="string" value="mintinstall.desktop"/>
+        <value type="string" value="xfce4-taskmanager.desktop"/>
+      </property>
+      <property name="recent" type="array">
+        <value type="string" value="xfce-wm-settings.desktop"/>
+        <value type="string" value="xfce-wmtweaks-settings.desktop"/>
+        <value type="string" value="thunar.desktop"/>
+        <value type="string" value="xfce-session-settings.desktop"/>
+        <value type="string" value="xfce-ui-settings.desktop"/>
+        <value type="string" value="lightdm-settings.desktop"/>
+        <value type="string" value="light-locker-settings.desktop"/>
+        <value type="string" value="mintdesktop.desktop"/>
+        <value type="string" value="mintinstall.desktop"/>
+        <value type="string" value="com.github.maoschanz.drawing.desktop"/>
+      </property>
+      <property name="launcher-show-description" type="bool" value="false"/>
+      <property name="menu-width" type="int" value="550"/>
+      <property name="menu-height" type="int" value="700"/>
+      <property name="position-categories-alternate" type="bool" value="false"/>
+      <property name="position-search-alternate" type="bool" value="false"/>
+      <property name="category-icon-size" type="int" value="2"/>
+      <property name="launcher-icon-size" type="int" value="3"/>
+      <property name="button-icon" type="string" value="start-here"/>
+      <property name="hover-switch-category" type="bool" value="false"/>
+    </property>
+    <property name="plugin-2" type="empty"/>
+    <property name="plugin-3" type="empty">
+      <property name="items" type="array">
+        <value type="string" value="17728588501.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-4" type="empty">
+      <property name="items" type="empty"/>
+    </property>
+    <property name="plugin-5" type="empty">
+      <property name="items" type="empty"/>
+    </property>
+    <property name="plugin-6" type="empty">
+      <property name="show-handle" type="empty"/>
+      <property name="middle-click" type="empty"/>
+    </property>
+    <property name="plugin-7" type="string" value="launcher">
+      <property name="expand" type="empty"/>
+      <property name="style" type="empty"/>
+      <property name="items" type="array">
+        <value type="string" value="17728589302.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-8" type="empty">
+      <property name="icon-size" type="int" value="32"/>
+      <property name="names-visible" type="empty"/>
+      <property name="show-frame" type="empty"/>
+      <property name="known-items" type="array">
+        <value type="string" value="blueman"/>
+      </property>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="mintupdate.py"/>
+        <value type="string" value="tray.py"/>
+      </property>
+      <property name="single-row" type="bool" value="true"/>
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="hidden-items" type="array">
+        <value type="string" value="blueman"/>
+      </property>
+      <property name="hidden-legacy-items" type="array">
+      </property>
+      <property name="hide-new-items" type="bool" value="true"/>
+    </property>
+    <property name="plugin-9" type="empty"/>
+    <property name="plugin-10" type="empty"/>
+    <property name="plugin-11" type="empty"/>
+    <property name="plugin-12" type="empty">
+      <property name="enable-keyboard-shortcuts" type="empty"/>
+      <property name="enable-mpris" type="empty"/>
+      <property name="mixer-command" type="empty"/>
+      <property name="show-notifications" type="empty"/>
+      <property name="known-players" type="string" value="org.gnome.Rhythmbox3"/>
+    </property>
+    <property name="plugin-13" type="empty">
+      <property name="digital-time-format" type="string" value="%I:%M %p"/>
+      <property name="digital-layout" type="empty"/>
+      <property name="digital-date-font" type="string" value="Sans 11"/>
+      <property name="digital-time-font" type="string" value="Sans Bold 11"/>
+      <property name="digital-date-format" type="string" value="%m/%d/%Y"/>
+    </property>
+    <property name="plugin-14" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17728589773.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-15" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-16" type="string" value="pager">
+      <property name="rows" type="uint" value="2"/>
+    </property>
+    <property name="plugin-17" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-18" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-19" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17728590194.desktop"/>
+      </property>
+    </property>
+  </property>
+</channel>
