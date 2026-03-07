@@ -151,13 +151,16 @@ sudo apt install ungoogled-chromium
 # download binary
 mkdir cortile
 cd cortile
+
 wget -qO- $(wget -qO- https://api.github.com/repos/leukipp/cortile/releases/latest | \
 jq -r '.assets[] | select(.name | contains ("linux_amd64.tar.gz")) | .browser_download_url') | \
 tar -xvz
 
 # move file to binary
-sudo cp cortile /usr/local/bin/cortile
 cp ../../cortile.service cortile.service
+sudo cp cortile /usr/local/bin/cortile
+
+mkdir -p ~/.config/systemd/user
 
 # copy systemd service file
 cp cortile.service ~/.config/systemd/user/
@@ -168,6 +171,7 @@ systemctl --user enable cortile.service
 # start systemd service
 systemctl --user start cortile.service
 
+cd ..
 
 # Cisco VPN
 # https://software.cisco.com/download/home/286330811/type/282364313/release/5.1.15.287
