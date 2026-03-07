@@ -154,6 +154,11 @@ sudo venv/bin/python3 main.py
 
 # :: networking [firewall]
 # https://docs.waydro.id/debugging/networking-issues
+# Change to home profile
+sudo ufw allow 53
+sudo ufw allow 67
+sudo ufw default allow FORWARD
+
 cd ..
 
 # miniconda
@@ -218,7 +223,7 @@ cd ..
 
 # Purge linux mint
 # https://github.com/MK2112/Linux-Mint-Debloater
-sudo apt remove rhythmbox pix sticky hypnotix celluloid warpinator             
+sudo apt remove rhythmbox pix sticky hypnotix celluloid warpinator thingy xfce4-dict            
 # thunderbird
 # simple-scan            
 
@@ -298,10 +303,17 @@ papirus-folders -C paleorange --theme Papirus-Dark
 sudo apt install steam-installer
 
 #---- displaylink drivers
+# https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu
+wget https://www.synaptics.com/sites/default/files/Ubuntu/pool/stable/main/all/synaptics-repository-keyring.deb
+
+sudo apt install ./synaptics-repository-keyring.deb
+sudp apt update
+sudo apt install displaylink-driver
+
 # https://github.com/AdnanHodzic/displaylink-debian
-git clone https://github.com/AdnanHodzic/displaylink-debian.git
-cd displaylink-debian
-sudo ./displaylink-debian.sh
-cd ..
+#git clone https://github.com/AdnanHodzic/displaylink-debian.git
+#cd displaylink-debian
+#sudo ./displaylink-debian.sh
+#cd ..
 
 
