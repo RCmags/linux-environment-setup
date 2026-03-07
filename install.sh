@@ -143,14 +143,15 @@ cd ..
 # https://github.com/casualsnek/waydroid_script
 git clone https://github.com/casualsnek/waydroid_script
 cd waydroid_script
-
 #conda create -n waydroid_script python=3.13
 #conda activate waydroid_script
 #pip install -r requirements.txt
-
 python3 -m venv venv
 venv/bin/pip install -r requirements.txt
 sudo venv/bin/python3 main.py
+
+# :: networking [firewall]
+# https://docs.waydro.id/debugging/networking-issues
 cd ..
 
 # miniconda
@@ -278,6 +279,11 @@ wget https://github.com/Ultimaker/Cura/releases/download/5.10.2/UltiMaker-Cura-5
 wget https://github.com/jgraph/drawio-desktop/releases/download/v29.5.2/drawio-x86_64-29.5.2.AppImage
 
 cd ..
+
+# :: Folders
+#git clone https://github.com/PapirusDevelopmentTeam/papirus-folders
+wget -qO- https://git.io/papirus-folders-install | sh
+papirus-folders -C paleorange --theme Papirus-Dark
 
 #---- hibernation ----
 # https://ubuntuhandbook.org/index.php/2021/08/enable-hibernate-ubuntu-21-10/
