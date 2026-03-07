@@ -41,6 +41,7 @@ sudo apt install vlc
 sudo apt install kdiskmark
 sudo apt install screengrab
 #sudo apt install gnome-system-monitor
+sudo apt install kolourpaint
 
 # :: qt platform themes
 # https://bbs.archlinux.org/viewtopic.php?id=259721
@@ -223,7 +224,8 @@ cd ..
 
 # Purge linux mint
 # https://github.com/MK2112/Linux-Mint-Debloater
-sudo apt remove rhythmbox pix sticky hypnotix celluloid warpinator thingy xfce4-dict            
+sudo apt remove rhythmbox pix sticky hypnotix celluloid warpinator thingy xfce4-dict   
+sudo apt remove drawing         
 # thunderbird
 # simple-scan            
 
@@ -316,4 +318,8 @@ sudo apt install displaylink-driver
 #sudo ./displaylink-debian.sh
 #cd ..
 
+#---- complete
+
+sudo apt autoremove
+sudo flatpak uninstall --unused
 
