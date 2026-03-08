@@ -1,3 +1,5 @@
 downloads/
 .config/systemd/
 .config/BambuStudio/
+.config/chromium/
+.config/unity3d/
