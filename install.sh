@@ -94,6 +94,9 @@ flatpak install flathub com.vscodium.codium
 flatpak install flathub com.github.xournalpp.xournalpp
 flatpak install flathub org.onlyoffice.desktopeditors
 
+# edit scale of vscode:
+# window.zoomLevel = 1
+
 # :: helpers
 flatpak install flathub com.github.jeromerobert.pdfarranger
 flatpak install flathub io.github.alainm23.planify
@@ -220,7 +223,7 @@ cd ..
 
 # Cisco VPN
 # https://software.cisco.com/download/home/286330811/type/282364313/release/5.1.15.287
-
+sudo ssh ../cisco-secure-client-linux64.sh
 
 # Purge linux mint
 # https://github.com/MK2112/Linux-Mint-Debloater
