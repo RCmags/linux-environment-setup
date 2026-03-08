@@ -323,6 +323,30 @@ sudo apt install displaylink-driver
 #sudo ./displaylink-debian.sh
 #cd ..
 
+
+#--- xfce suspend error
+# Suspend error: fix with power manager settings
+# https://forums.linuxmint.com/viewtopic.php?p=2544132
+
+# Fix with XML file:
+# https://forums.linuxmint.com/viewtopic.php?f=57&t=259912&p=2025367#p2025367
+sudo nano /usr/share/polkit-1/actions/org.freedesktop.login1.policy
+
+# Modify as shown:
+#<action id="org.freedesktop.login1.suspend">
+#        <description gettext-domain="systemd">Suspend the system</description>
+#        <message gettext-domain="systemd">Authentication is required to suspend the system.</message>
+#        <defaults>
+#                <allow_any>yes</allow_any>
+#                <allow_inactive>yes</allow_inactive>
+#                <allow_active>yes</allow_active>
+#        </defaults>
+#</action>
+
+# Fix with polkit
+# https://stijn.tintel.eu/blog/2015/09/11/polkit-requesting-root-password-to-suspend-after-updating-version-0112-to-0113/
+sudo cp ../85-suspend.rules /etc/polkit-1/rules.d/85-suspend.rules
+
 #---- complete
 
 sudo apt autoremove
