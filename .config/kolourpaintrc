@@ -1,0 +1,46 @@
+1920x1080 screen: Height=977
+1920x1080 screen: Width=1906
+1920x1080 screen: XPosition=7
+1920x1080 screen: YPosition=96
+State=AAAA/wAAAAD9AAAAAQAAAAMAAAXIAAAAZ/wBAAAAAfsAAAASAEMAbwBsAG8AcgAgAEIAbwB4AQAAAaoAAAXIAAACDgD///8AAAXIAAADCQAAAAQAAAAEAAAAAQAAAAL8AAAAAgAAAAAAAAABAAAAEABUAG8AbwBsACAAQgBvAHgDAAAAAP////8AAAAAAAAAAAAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABYAdABlAHgAdABUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
+eDP=eDP
+
+[General Settings]
+First Time=false
+Last Document Size=1052,590
+Open Images in the Same Window=false
+
+[MainWindow]
+1920x1080 screen: Height=977
+1920x1080 screen: Width=1906
+1920x1080 screen: XPosition=7
+1920x1080 screen: YPosition=96
+State=AAAA/wAAAAD9AAAAAQAAAAMAAAXIAAAAZ/wBAAAAAfsAAAASAEMAbwBsAG8AcgAgAEIAbwB4AQAAAaoAAAXIAAACDgD///8AAAXIAAADCQAAAAQAAAAEAAAAAQAAAAL8AAAAAgAAAAAAAAABAAAAEABUAG8AbwBsACAAQgBvAHgDAAAAAP////8AAAAAAAAAAAAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABYAdABlAHgAdABUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+eDP=eDP
+
+[MainWindow][Toolbar Tool Box]
+ToolButtonStyle=IconOnly
+
+[Tool Settings]
+Last Used Tool=1
+Tool Widget Brush Col=0
+Tool Widget Brush Row=0
+Tool Widget Eraser Size Col=0
+Tool Widget Eraser Size Row=1
+Tool Widget Fill Style Col=0
+Tool Widget Fill Style Row=0
+Tool Widget Line Width Col=0
+Tool Widget Line Width Row=0
+Tool Widget Opaque/Transparent Col=0
+Tool Widget Opaque/Transparent Row=1
+Tool Widget Spraycan Size Col=0
+Tool Widget Spraycan Size Row=0
+
+[Toolbar Tool Box]
+ToolButtonStyle=IconOnly
+
+[Undo/Redo Settings]
+Max Limit=500
+Max Limit Size Limit=16777216
+Min Limit=10
