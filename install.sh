@@ -156,6 +156,8 @@ python3 -m venv venv
 venv/bin/pip install -r requirements.txt
 sudo venv/bin/python3 main.py
 
+# Install Libhoudini for intel; libndk for AMD
+
 # :: networking [firewall]
 # https://docs.waydro.id/debugging/networking-issues
 # Change to home profile
