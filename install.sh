@@ -111,7 +111,7 @@ flatpak install flathub io.github.davidoc26.wallpaper_selector
 
 # :: chat
 flatpak install flathub org.telegram.desktop
-flatpak install flathub org.signal.Signal
+#flatpak install flathub org.signal.Signal
 
 # :: browsers
 flatpak install flathub org.torproject.torbrowser-launcher
