@@ -11,11 +11,21 @@
   <property name="show-notifications-on" type="string" value="active-monitor"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="com.cisco.secureclient.gui"/>
       <value type="string" value="org.freedesktop.network-manager-applet"/>
+      <value type="string" value="org.gnome.baobab"/>
       <value type="string" value="timeshift-gtk"/>
       <value type="string" value="waydroid.android"/>
+      <value type="string" value="waydroid.com.android.providers.downloads"/>
+      <value type="string" value="waydroid.com.aurora.store"/>
+      <value type="string" value="waydroid.org.fdroid.fdroid"/>
       <value type="string" value="xfce4-power-manager"/>
       <value type="string" value="xfce4-settings-helper"/>
     </property>
+    <property name="muted_applications" type="array">
+      <value type="string" value="waydroid.android"/>
+      <value type="string" value="waydroid.com.android.providers.downloads"/>
+    </property>
   </property>
+  <property name="date-time-custom-format" type="string" value="%a %H:%M:%S"/>
 </channel>

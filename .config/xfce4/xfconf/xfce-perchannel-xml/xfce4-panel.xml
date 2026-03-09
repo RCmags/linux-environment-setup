@@ -56,16 +56,16 @@
         <value type="string" value="xfce4-taskmanager.desktop"/>
       </property>
       <property name="recent" type="array">
-        <value type="string" value="org.gnome.baobab.desktop"/>
         <value type="string" value="steam.desktop"/>
-        <value type="string" value="org.kde.kolourpaint.desktop"/>
-        <value type="string" value="qt5ct.desktop"/>
-        <value type="string" value="qt6ct.desktop"/>
-        <value type="string" value="com.vscodium.codium.desktop"/>
-        <value type="string" value="cc.arduino.IDE2.desktop"/>
-        <value type="string" value="ungoogled-chromium.desktop"/>
-        <value type="string" value="timeshift-gtk.desktop"/>
+        <value type="string" value="signal-desktop.desktop"/>
         <value type="string" value="waydroid-session.desktop"/>
+        <value type="string" value="org.telegram.desktop.desktop"/>
+        <value type="string" value="xfce4-power-manager-settings.desktop"/>
+        <value type="string" value="io.freetubeapp.FreeTube.desktop"/>
+        <value type="string" value="lightdm-settings.desktop"/>
+        <value type="string" value="light-locker-settings.desktop"/>
+        <value type="string" value="mintinstall.desktop"/>
+        <value type="string" value="xfce4-mime-settings.desktop"/>
       </property>
       <property name="launcher-show-description" type="bool" value="false"/>
       <property name="menu-width" type="int" value="550"/>
@@ -108,6 +108,7 @@
       <property name="names-visible" type="empty"/>
       <property name="show-frame" type="empty"/>
       <property name="known-items" type="array">
+        <value type="string" value="TelegramDesktop"/>
         <value type="string" value="steam"/>
         <value type="string" value="screengrab"/>
         <value type="string" value="transmission-gtk"/>
@@ -116,6 +117,7 @@
         <value type="string" value="blueman"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="com.cisco.secureclient.gui"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="mintupdate.py"/>
         <value type="string" value="tray.py"/>
@@ -128,9 +130,11 @@
         <value type="string" value="screengrab"/>
         <value type="string" value="blueman"/>
         <value type="string" value="transmission-gtk"/>
+        <value type="string" value="TelegramDesktop"/>
         <value type="string" value="steam"/>
       </property>
       <property name="hidden-legacy-items" type="array">
+        <value type="string" value="com.cisco.secureclient.gui"/>
       </property>
       <property name="hide-new-items" type="bool" value="true"/>
     </property>
@@ -142,7 +146,7 @@
       <property name="enable-mpris" type="empty"/>
       <property name="mixer-command" type="empty"/>
       <property name="show-notifications" type="empty"/>
-      <property name="known-players" type="string" value="firefox;org.gnome.Rhythmbox3"/>
+      <property name="known-players" type="string" value="firefox;FreeTube;org.gnome.Rhythmbox3"/>
     </property>
     <property name="plugin-13" type="empty">
       <property name="digital-time-format" type="string" value="%I:%M %p"/>
