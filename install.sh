@@ -149,14 +149,17 @@ cd ..
 # https://github.com/casualsnek/waydroid_script
 git clone https://github.com/casualsnek/waydroid_script
 cd waydroid_script
-#conda create -n waydroid_script python=3.13
-#conda activate waydroid_script
-#pip install -r requirements.txt
 python3 -m venv venv
 venv/bin/pip install -r requirements.txt
 sudo venv/bin/python3 main.py
 
-# Install Libhoudini for intel; libndk for AMD
+# Install Libhoudini for intel/amd; libndk for AMD (older?)
+
+# :: make shared folder
+# https://docs.waydro.id/faq/setting-up-a-shared-folder
+sudo mkdir /mnt/waydroid
+sudo bindfs --mirror=$(id -u) ~/.local/share/waydroid/data/media/0 /mnt/waydroid
+
 
 # :: networking [firewall]
 # https://docs.waydro.id/debugging/networking-issues
