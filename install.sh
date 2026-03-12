@@ -168,6 +168,11 @@ sudo ufw allow 53
 sudo ufw allow 67
 sudo ufw default allow FORWARD
 
+# :: reinstall rom if messed up
+# https://github.com/waydroid/waydroid/discussions/1358
+# sudo rm -rf ~/.local/share/waydroid
+# sudo rm -rf /var/lib/waydroid
+
 cd ..
 
 # miniconda
