@@ -134,16 +134,18 @@ sudo apt update && sudo apt install signal-desktop
 # https://github.com/1999AZZAR/use-waydroid-on-x11/tree/master
 git clone https://github.com/1999AZZAR/use-waydroid-on-x11.git
 cd use-waydroid-on-x11
-sh install.sh
+sudo sh install.sh
 
 # desktop entry
-sh waydroid-session.sh 
+#sh waydroid-session.sh 
 sudo cp waydroid-session.sh /usr/bin/waydroid-session.sh
 sudo chmod +x /usr/bin/waydroid-session.sh
 sudo cp ../../waydroid-session.desktop /usr/share/applications/waydroid-session.desktop
-sudo chmod +x /usr/share/applications/waydroid-session.desktop
+#sudo chmod +x /usr/share/applications/waydroid-session.desktop
 cd ..
 
+# If using gapps, register:
+# https://docs.waydro.id/faq/google-play-certification
 
 # :: waydroid script 
 # https://github.com/casualsnek/waydroid_script
