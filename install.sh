@@ -34,6 +34,7 @@ sudo systemctl enable --now tlp.service
 
 #:: File tranfer
 sudo apt install syncthing
+sudo apt install syncthing-gtk
 systemctl --user start syncthing
 
 #:: gui tools
