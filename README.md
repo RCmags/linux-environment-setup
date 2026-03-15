@@ -2,7 +2,7 @@
 The scripts in this repository are orovide a pre-defined setup and work environment for 
 fresh linux installs with XFCE. 
 
-# Installation
+### Installation
 Run the command:
 
 ```sh
@@ -10,10 +10,10 @@ chmod -x install.sh
 sh install.sh
 ```
 
-## WWAN Card configuration:
+### Pruning
+Sometimes the repository can grow large due to huge config files generate by specific programs (ex: chrome). To make the `.git` folder smaller, run the command:
 
 ```
-https://superuser.com/questions/1505233/how-to-place-and-receive-phone-calls-on-debian
-https://blog.desdelinux.net/en/modem-manager-gui-excellent-app-management-usb-modems/
-https://flathub.org/en/apps/org.gnome.Calls
+git gc --prune=now --aggressive
 ```
+
