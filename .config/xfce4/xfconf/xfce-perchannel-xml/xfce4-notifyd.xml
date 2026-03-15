@@ -11,14 +11,26 @@
   <property name="show-notifications-on" type="string" value="active-monitor"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="blueman"/>
       <value type="string" value="com.cisco.secureclient.gui"/>
       <value type="string" value="org.freedesktop.network-manager-applet"/>
       <value type="string" value="org.gnome.baobab"/>
+      <value type="string" value="org.xfce.Thunar"/>
+      <value type="string" value="Screen Grab"/>
+      <value type="string" value="signal"/>
+      <value type="string" value="thunar-volman"/>
       <value type="string" value="timeshift-gtk"/>
       <value type="string" value="waydroid.android"/>
+      <value type="string" value="waydroid.com.android.contacts"/>
       <value type="string" value="waydroid.com.android.providers.downloads"/>
+      <value type="string" value="waydroid.com.android.vending"/>
       <value type="string" value="waydroid.com.aurora.store"/>
+      <value type="string" value="waydroid.com.google.android.gms"/>
+      <value type="string" value="waydroid.com.google.android.googlequicksearchbox"/>
+      <value type="string" value="waydroid.com.google.android.setupwizard"/>
       <value type="string" value="waydroid.org.fdroid.fdroid"/>
+      <value type="string" value="waydroid.org.lineageos.etar"/>
+      <value type="string" value="waydroid.org.lineageos.waydroidupdater"/>
       <value type="string" value="xfce4-power-manager"/>
       <value type="string" value="xfce4-settings-helper"/>
     </property>

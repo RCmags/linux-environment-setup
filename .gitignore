@@ -3,3 +3,10 @@ downloads/
 .config/BambuStudio/
 .config/chromium/
 .config/unity3d/
+.config/signal/
+.config/Unknown\ Organization/
+.config/syncthing
+.config/syncthing-gtk
+.config/menus
+.config/background
+.config/signal

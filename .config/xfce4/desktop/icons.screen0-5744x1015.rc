@@ -1,16 +1,12 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
-[/home/user/Desktop/logs]
-row=2
+[/home/user/Desktop/Drive-Encryptions.txt]
+row=3
 col=0
 
 [/home/user/Desktop/class-notes]
 row=1
-col=0
-
-[/home/user/Desktop/StorageExternalSSD.txt]
-row=3
 col=0
 
 [/home/user/Desktop/storage-hdd.png]

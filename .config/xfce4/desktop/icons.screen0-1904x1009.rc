@@ -1,6 +1,22 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
+[/home/user/Desktop/logs]
+row=2
+col=0
+
+[/home/user/Desktop/class-notes]
+row=0
+col=13
+
+[/home/user/Desktop/StorageExternalSSD.txt]
+row=3
+col=0
+
+[/home/user/Desktop/storage-hdd.png]
+row=4
+col=0
+
 [/home/user/Desktop/linux-env-setup]
 row=1
 col=0
