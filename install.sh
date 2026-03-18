@@ -358,6 +358,11 @@ sudo nano /usr/share/polkit-1/actions/org.freedesktop.login1.policy
 # https://stijn.tintel.eu/blog/2015/09/11/polkit-requesting-root-password-to-suspend-after-updating-version-0112-to-0113/
 sudo cp ../85-suspend.rules /etc/polkit-1/rules.d/85-suspend.rules
 
+## Copy gamepad config
+# This requires `antimicrox`
+cp -r ../gamepad ~/gamepad
+
+
 #---- complete
 
 sudo apt autoremove
