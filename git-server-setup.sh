@@ -40,3 +40,7 @@ sudo nano /etc/ssh/sshd_config
 
 sudo systemctl restart sshd
 
+# 5. Instal rustdesk for redundacy
+# https://github.com/rustdesk/rustdesk/releases
+# NOTE: disk encryption may cause ssh to fail at first boot.
+
