@@ -367,6 +367,16 @@ netbird up
 #--- add essential icon themes
 sudo apt install greybird-gtk-theme 
 sudo apt install elementary-xfce-icon-theme
+sudo apt install elementary-icon-theme
+
+sudo apt install xubuntu-icon-theme
+sudo apt install ubuntu-mono
+sudo apt install humanity-icon-theme
+sudo apt install gnome-icon-theme
+sudo apt install adwaita-icon-theme
+
+sudo apt install hicolor-icon-theme
+sudo apt install breeze-icon-theme
 
 #---- complete
 
