@@ -42,5 +42,55 @@ sudo systemctl restart sshd
 
 # 5. Instal rustdesk for redundacy
 # https://github.com/rustdesk/rustdesk/releases
-# NOTE: disk encryption may cause ssh to fail at first boot.
+# NOTE: disk encryption may cause ssh to fail at first boot. Need to manually login to decrypt
+
+# 6. Install xrdp
+# https://www.cherryservers.com/blog/install-xrdp-on-ubuntu-2404
+sudo apt install xrdp
+sudo systemctl status xrdp
+
+# :: install google authenticator for 2FA
+# https://linux.how2shout.com/enabling-google-authenticator-on-ubuntu-24-04-for-two-factor-authentication/
+
+sudo apt install libpam-google-authenticator
+
+# generate code
+google-authenticator
+
+# :: append 2fa to password [append auth-code to end of password]
+sudo nano /etc/pam.d/xrdp-sesman
+
+# Append to the start of `xrdp-sesman`:
+# auth required pam_google_authenticator.so forward_pass nullok
+
+#####################
+# ::: [OPTIONAL] Enforce 2FA at login screen
+# On LightDM login screen:
+
+#sudo nano /etc/pam.d/lightdm
+
+# append below @include common-auth:
+# auth required pam_google_authenticator.so nullok
+
+#####################
+# :: restrict to certain users
+# NOTE: This is buggy!!!
+# https://askubuntu.com/questions/1433247/ubuntu-22-04-xrdp-allow-multiple-sessions-and-restrict-some-users
+
+#sudo groupadd tsusers
+#sudo usermod -aG tsusers git
+#sudo usermod -aG tsusers admin
+
+# :: modify group policy
+# Not always needed? See:
+# https://c-nergy.be/blog/?p=18536
+
+#sudo nano /etc/xrdp/sesman.ini
+# change the line 'AlwaysCheckGroup from false to true'
+
+# :: If the config messes up, run:
+# sudo apt purge xrdp
+
+# Then reinstall xrdp to start from scatch
+#####################
 
