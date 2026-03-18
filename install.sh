@@ -358,6 +358,16 @@ sudo nano /usr/share/polkit-1/actions/org.freedesktop.login1.policy
 # https://stijn.tintel.eu/blog/2015/09/11/polkit-requesting-root-password-to-suspend-after-updating-version-0112-to-0113/
 sudo cp ../85-suspend.rules /etc/polkit-1/rules.d/85-suspend.rules
 
+#--- Install peer-to-peer VPN
+# :: netbird
+# https://app.netbird.io/install
+curl -fsSL https://pkgs.netbird.io/install.sh | sh
+netbird up
+
+#--- add essential icon themes
+sudo apt install greybird-gtk-theme 
+sudo apt install elementary-xfce-icon-theme
+
 #---- complete
 
 sudo apt autoremove
