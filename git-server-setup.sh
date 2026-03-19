@@ -11,6 +11,12 @@ sudo adduser git
 
 sudo ecryptfs-migrate-home -u git
 
+# NOTE: The above will BREAK if the user password is changed. [CAN'T LOGIN]
+# Follow this procedure to AVOID:
+sudo passwd git
+ecryptfs-rewrap-passphrase ~/.ecryptfs/wrapped-passphrase
+
+
 # Login and get passphrase
 su git
 ecryptfs-unwrap-passphrase
@@ -67,6 +73,9 @@ sudo nano /etc/pam.d/xrdp-sesman
 
 # Append to the start of `xrdp-sesman`:
 # auth required pam_google_authenticator.so forward_pass nullok
+
+# NOTE: appyling google authentication to the login can be easily-undone
+# by editing the content in /etc/ should the OS be unencrypted.
 
 ######## OPTIONAL #########
 # NOTE: remove `nullok` to force 2FA. Encrypted drives will fail to
