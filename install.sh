@@ -43,6 +43,7 @@ sudo apt install kdiskmark
 sudo apt install screengrab
 #sudo apt install gnome-system-monitor
 sudo apt install kolourpaint
+sudo apt install synaptic
 
 # :: qt platform themes
 # https://bbs.archlinux.org/viewtopic.php?id=259721
