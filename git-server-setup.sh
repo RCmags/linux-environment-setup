@@ -23,7 +23,12 @@ ecryptfs-unwrap-passphrase
 
 sudo apt install ssh
 sudo systemctl enable ssh
-#  sudo ufw allow ssh
+
+# :: Limit access
+# sudo ufw allow ssh # General for all
+
+ipsource=192.168.1.100
+sudo ufw allow from $ipsource to any port 22 # default ssh port
 
 # 3. Copy ssh-key [on client]
 # https://phoenixnap.com/kb/ssh-with-key
@@ -63,8 +68,12 @@ sudo nano /etc/pam.d/xrdp-sesman
 # Append to the start of `xrdp-sesman`:
 # auth required pam_google_authenticator.so forward_pass nullok
 
-#####################
-# ::: [OPTIONAL] Enforce 2FA at login screen
+######## OPTIONAL #########
+# NOTE: remove `nullok` to force 2FA. Encrypted drives will fail to
+# login on first attempt. Beware!
+
+#--------------------
+# ::: [Enforce 2FA at login screen
 # On LightDM login screen:
 
 #sudo nano /etc/pam.d/lightdm
@@ -72,7 +81,7 @@ sudo nano /etc/pam.d/xrdp-sesman
 # append below @include common-auth:
 # auth required pam_google_authenticator.so nullok
 
-#####################
+#--------------------
 # :: restrict to certain users
 # NOTE: This is buggy!!!
 # https://askubuntu.com/questions/1433247/ubuntu-22-04-xrdp-allow-multiple-sessions-and-restrict-some-users
@@ -92,5 +101,22 @@ sudo nano /etc/pam.d/xrdp-sesman
 # sudo apt purge xrdp
 
 # Then reinstall xrdp to start from scatch
-#####################
+#--------------------
+
+# Limit XRDP to specific IP address(s)
+# allow for all 
+sudo ufw allow 3389/tcp
+
+# block all
+sudo ufw deny 3389/tcp
+
+# allow selective
+ipsource=192.168.1.100  # Client IP
+sudo ufw allow from $ipsource to any port 3389
+
+# ^ Repeat for all desired clients
+
+# If a rule is incorrect, run:
+#sudo ufw delete allow from $ipsource to any port 3389
+
 
