@@ -13,9 +13,12 @@ sudo ecryptfs-migrate-home -u git
 
 # NOTE: The above will BREAK if the user password is changed. [CAN'T LOGIN]
 # Follow this procedure to AVOID:
-sudo passwd git
-ecryptfs-rewrap-passphrase ~/.ecryptfs/wrapped-passphrase
+# https://forums.linuxmint.com/viewtopic.php?t=266204
 
+ecryptfs-rewrap-passphrase /home/.ecryptfs/$USER/.ecryptfs/wrapped-passphrase
+# ^ passpharse refers to user login password
+
+sudo passwd git
 
 # Login and get passphrase
 su git
