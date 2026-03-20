@@ -63,6 +63,15 @@ sudo systemctl restart sshd
 sudo apt install xrdp
 sudo systemctl status xrdp
 
+# :: configure to enable timeout
+# https://oneuptime.com/blog/post/2026-01-15-setup-xrdp-remote-desktop-ubuntu/view
+sudo nano /etc/xrdp/sesman.ini
+
+# ^ set the following:
+#KillDisconnected=true
+#DisconnectedTimeLimit=10
+
+
 # :: install google authenticator for 2FA
 # https://linux.how2shout.com/enabling-google-authenticator-on-ubuntu-24-04-for-two-factor-authentication/
 
