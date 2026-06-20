@@ -322,6 +322,8 @@ papirus-folders -C paleorange --theme Papirus-Dark
 sudo apt install steam-installer
 
 #---- displaylink drivers
+# WARNING: This driver can BREAK suspend/resume with docks.
+# only install if NESSESARY
 # https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu
 wget https://www.synaptics.com/sites/default/files/Ubuntu/pool/stable/main/all/synaptics-repository-keyring.deb
 
