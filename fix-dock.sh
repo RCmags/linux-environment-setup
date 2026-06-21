@@ -1,10 +1,11 @@
 # Commands to fix the lenovo dock when the laptop lid is closed
 
-# https://bbs.archlinux.org/viewtopic.php?id=307517
-mkdir ~/.config/autorandr
-nano ~/.config/autorandr/settings.ini
+sudo apt install pipx
+pipx install autorandr
 
-# Add:
-#[config]
-#match-edid=true
+# configure displays with xfce app, then enter:
+autorandr --save dock
+
+# test the configuration with:
+autorandr --load dock
 

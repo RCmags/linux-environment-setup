@@ -339,12 +339,28 @@ sudo apt install displaylink-driver
 
 
 #--- xfce suspend error
+# See: gdbus.error:org.freedesktop.dbus.error.accessDenied: permission denied 
+
 # Suspend error: fix with power manager settings
 # https://forums.linuxmint.com/viewtopic.php?p=2544132
 
-# Fix with XML file:
+# 1. Configure power manager
+# https://askubuntu.com/questions/627356/xubuntu-15-04-cannot-suspend-when-inactive/851760#851760
+
+# Check with:
+# xfconf-query -c xfce4-power-manager -lv
+
+# Must see:
+# ... 
+# /xfce4-power-manager/inactivity-sleep-mode-on-battery   1
+
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/inactivity-sleep-mode-on-battery -n -t int -s 1
+
+### alternatives ###
+
+# 2. Fix with XML file:
 # https://forums.linuxmint.com/viewtopic.php?f=57&t=259912&p=2025367#p2025367
-sudo nano /usr/share/polkit-1/actions/org.freedesktop.login1.policy
+#sudo nano /usr/share/polkit-1/actions/org.freedesktop.login1.policy
 
 # Modify as shown:
 #<action id="org.freedesktop.login1.suspend">
@@ -357,9 +373,10 @@ sudo nano /usr/share/polkit-1/actions/org.freedesktop.login1.policy
 #        </defaults>
 #</action>
 
-# Fix with polkit
+# 3. Fix with polkit
 # https://stijn.tintel.eu/blog/2015/09/11/polkit-requesting-root-password-to-suspend-after-updating-version-0112-to-0113/
-sudo cp ../85-suspend.rules /etc/polkit-1/rules.d/85-suspend.rules
+#sudo cp ../85-suspend.rules /etc/polkit-1/rules.d/85-suspend.rules
+
 
 #--- Install peer-to-peer VPN
 # :: netbird
