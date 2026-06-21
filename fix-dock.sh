@@ -1,5 +1,7 @@
 # Commands to fix the lenovo dock when the laptop lid is closed
 
+# NOTE: consider DISSABLING the laptop lid switch to prevent finding the laptop display on lid close. Use must MANUALLY turn on display when undocked/docked. Edit via BIOS.
+
 # 1. use fixed display configurations
 
 sudo apt install pipx
