@@ -1,0 +1,3 @@
+[submodule "nvidia-compute-suspend"]
+	path = nvidia-compute-suspend
+	url = git@github.com:RCmags/nvidia-compute-suspend.git
