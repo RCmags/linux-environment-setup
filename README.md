@@ -1,6 +1,5 @@
 # Linux environment setup
-The scripts in this repository are orovide a pre-defined setup and work environment for 
-fresh linux installs with XFCE. 
+The scripts in this repository provide provide a quick way to setup of a personalized development environment for Ubuntu-based linux distros running XFCE. It's meant to keep user configurations the same should the OS be reinstalled, or should one create a new user account on a stable system. 
 
 ### Installation
 Run the command:
