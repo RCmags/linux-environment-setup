@@ -12,6 +12,9 @@ curl -fsSL https://ollama.com/install.sh | sh
 # NOTE: Use efficient CPU-based models with mixture of experts.
 ollama pull lfm2.5:latest
 
+# Consider: `lfm2:latest` as a 14b model that's' very fast on CPU.
+# https://ollama.com/library/lfm2
+
 # Add the API base:
 nano ~/.bashrc
 
