@@ -344,11 +344,11 @@ sudo apt install displaylink-driver
 # Suspend error: fix with power manager settings
 # https://forums.linuxmint.com/viewtopic.php?p=2544132
 
-# 1. Configure power manager
+# 1. Configure power manager [method can conflict with dock]
 # https://askubuntu.com/questions/627356/xubuntu-15-04-cannot-suspend-when-inactive/851760#851760
 
 # Check with:
-# xfconf-query -c xfce4-power-manager -lv
+xfconf-query -c xfce4-power-manager -lv
 
 # Must see:
 # ... 
@@ -356,13 +356,30 @@ sudo apt install displaylink-driver
 
 xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/inactivity-sleep-mode-on-battery -n -t int -s 1
 
+# The above may generate the error:
+# gdbus.error:org.freedesktop.login1.operationinprogress: there's already a shutdown or sleep operation in progress
+
+# IMPORTANT: 
+# Uncheck the option "Lock screen when going for sleep" in `xfce4-power-manager`
+# If using dock, set "lock screen on lid close on AC"
+
+# To undo:
+#xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/inactivity-sleep-mode-on-battery -r
+
 ### alternatives ###
 
 # 2. Fix with XML file:
 # https://forums.linuxmint.com/viewtopic.php?f=57&t=259912&p=2025367#p2025367
 #sudo nano /usr/share/polkit-1/actions/org.freedesktop.login1.policy
 
-# Modify as shown:
+
+# 2A. Find:
+#<allow_any>auth_admin_keep</allow_any>
+#<allow_inactive>auth_admin_keep</allow_inactive>
+#<allow_active>yes</allow_active>
+
+# 2B. Modify as shown:
+
 #<action id="org.freedesktop.login1.suspend">
 #        <description gettext-domain="systemd">Suspend the system</description>
 #        <message gettext-domain="systemd">Authentication is required to suspend the system.</message>
