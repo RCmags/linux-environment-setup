@@ -1,0 +1,4 @@
+# See: https://aider.chat/docs/config.html
+
+# Default model
+model: ollama_chat/lfm2.5:latest
