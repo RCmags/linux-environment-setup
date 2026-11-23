@@ -3,5 +3,8 @@ https://gist.github.com/davidemiceli/69b4030e08dcee9ab89f34ead49ff0dc
 
 https://mljourney.com/how-to-configure-ollama-environment-variables-complete-guide/
 
+# compress kv cache
+https://forgepc.co.uk/how-to/how-to-speed-up-local-llm-ollama
+
 # Tests
 https://github.com/w512/Prompt-Vault/blob/master/Easy/ToDo_List.md
