@@ -8,3 +8,13 @@ https://forgepc.co.uk/how-to/how-to-speed-up-local-llm-ollama
 
 # Tests
 https://github.com/w512/Prompt-Vault/blob/master/Easy/ToDo_List.md
+
+# Mixture of experts models
+
+* strong-model:
+https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF
+
+https://huggingface.co/unsloth/Inkling-2-Mini-GGUF
+
+* weak-model:
+https://ollama.com/library/lfm3
